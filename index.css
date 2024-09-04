@@ -1,0 +1,194 @@
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ececec;
+ }  
+.main-container{
+    display: flex;
+    padding: 0;
+}
+.nav-bar{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: tomato;
+    width: 20%;
+    height: 100%;
+    & .logo{
+        width: 100%;
+    }
+}
+
+.inner-container{
+    width:80%;
+    margin-left: 20%;  
+}
+.nav-menus {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin: 2px 90px;
+    padding: 6px;
+
+}
+
+.nav-menus div:hover {
+    cursor: pointer;
+    
+    background-color: #385170;
+    
+}
+
+.curosil-img img{
+    width: 100%;
+    height: 600px;
+}
+.line{
+    border: 3px solid #385170;
+    margin-bottom: 6.5px;
+}
+.text-center{
+   text-align: center;
+}
+.top-content{
+    display: inline;
+    background:#385170;
+    border-radius: 0 0px 5px 5px;
+    margin-top: 10px;
+    padding: 5px;
+}
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+    
+}
+.container{
+    padding: 0 70px;
+}
+
+.about-container img{
+    margin-top: 30px;
+    max-height: 300px;
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;   
+}
+.about-text{
+    margin-top: 70px;
+    & img {
+        width: 250px;
+        height: 200px;
+        /* margin: 10% 0px 10% 35%; */
+    }
+}
+.person-details{
+    margin-top: 30px;
+}
+.inner-services{
+    background-color:#f95959;
+}
+.skills-graph {
+    width: 30%;
+    margin-left: 10%;
+    & .bar {
+        background: white;
+    }
+   
+}
+.sevice-container{
+    margin-top: 20px;
+}
+.portfolio-containner {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    & img{
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+        
+    }
+   
+}
+.contact-us{
+    margin-top:40px;
+    & button{
+        width: 130px;
+        margin-left: 175px;
+  
+    }
+}
+.footer{
+    margin-top: 30px;
+    background:#22313f;
+    padding: 31px;
+    text-align: center;
+}
+
+
+
+
+
+
+@media (max-width: 768px){
+    .main-container {
+        /* display: flex; */
+        padding: 0;
+    }
+    .nav-bar{
+     flex-direction: row;
+     position: absolute;
+     width:100%;
+     height: auto;
+     & .logo{
+        display: none;
+     }
+    }
+    .nav-menus{
+        flex-direction: row;;
+        width:100%;
+    }
+    .inner-container{
+        width:100%;
+         margin: 0;
+
+    }
+    .curosil-img img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: -1;
+    }
+
+    .about-text {
+        & img {
+         width: 100%;
+        height: 200px;
+           margin:0;
+        }
+    }
+    .about-container {
+        justify-content: center;
+    }
+    .skills-graph {
+        width: 100%;
+       margin:0;
+    }
+    .contact-us {
+        & button {
+            width: 130px;
+            margin:0;
+        }
+    
+    
+   
+}
